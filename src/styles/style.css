@@ -1,0 +1,70 @@
+body{
+    font-family: 'Open Sans';
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+button {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+input {
+    border: none;
+    outline: none;
+}
+ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+p {
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+#root {
+    position: relative;
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+.flex25{
+    flex: 1 1 25%;
+}
+.flex50 {
+    flex: 1 1 50%;
+}
+.align-center {
+    align-items: center;
+}
+.space-between {
+    justify-content: space-between;
+}
+.justify-end {
+    justify-content: flex-end;
+}
+.justify-middle {
+    justify-content: center;
+}
+.paddingY_10 {
+    padding: 10px 0px;
+}
+.paddingX_10px {
+    padding: 0px 10px;
+}
+.error {
+    color: red;
+    font-size: 13px;
+    text-decoration: underline red;
+}

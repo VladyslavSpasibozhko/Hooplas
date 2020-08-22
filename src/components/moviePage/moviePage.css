@@ -1,0 +1,146 @@
+.movie-page-container {
+    padding-top: 40px;
+    min-height: 700px;
+}
+.movie-title, .movie-genre {
+    min-height: 40px;
+    border-bottom: 1px solid #d7dede;
+}
+.movie-title {
+    font-size: 28px;
+    color: #404040;
+    line-height: 40px;
+}
+.movie-genre {
+    padding: 5px 0px;
+}
+.movie-genre-item {
+    margin: 0px 10px;
+    border: 1px solid #0047af;
+    color: #0047af;
+    font-size: 12px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.movie-poster {
+    padding: 20px;
+    max-width: 35%;
+}
+.movie-poster img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 0px 4px 0px #9b9b9b;
+}
+
+.movie-description-container {
+    padding-top: 20px;
+}
+.movie-tagline {
+    padding: 10px 0px;
+    color: #5e5d5d;
+    font-size: 16px;
+    text-align: center;
+    line-height: 22px;
+    border-bottom: 1px solid #d7dede;
+    font-weight: 600;
+}
+.companies-container {
+    padding-top: 10px;
+    flex-wrap: wrap;
+}
+.companies-container .company-item {
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 1px solid #d7dede;
+    line-height: 25px;
+    color: #0047af;
+    font-weight: 600;
+    white-space: nowrap;
+}
+.companies-container .company-item:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+    border-right:none;
+}
+.movie-overview {
+    padding-top: 10px;
+    font-size: 15px;
+}
+.movie-release-date {
+    font-size: 15px;
+    padding-top: 20px;
+}
+.movie-release-date span {
+    font-weight: 600;
+    color: #0047af;
+}
+.movie-rating-container {
+    padding: 10px 0px;
+}
+.movie-rating-container .vote_count {
+    color: #9b9b9b;
+    font-size: 12px;
+}
+.star-empty, .star-full  {
+    color: #ffdd00;
+}
+.movie-favourite-button {
+    background: #0047af;
+    color: #ffffff;
+    text-align: start;
+    padding: 10px;
+    border-radius: 10px;
+    width: 90px;
+    position: relative;
+}
+.movie-favourite-button::before {
+    content: '\f004';
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    padding: 0px 7px;
+    border-left: 1px solid #fff;
+}
+.movie-reviews-container {
+    padding: 20px;
+}
+.user-review-container {
+    margin: 10px 0px;
+}
+.user-photo {
+    min-width: 50px;
+    min-height: 80px;
+    padding: 0px 15px;
+    background: #f4f4f4;
+    border-radius: 5px;
+}
+.user-photo div {
+    position: relative;
+    font-size: 30px;
+    font-weight: 900;
+    color: #dcdcdc;
+}
+.user-photo div::before {
+    content: "\f007";
+    font-family: "Font Awesome 5 Free";
+}
+.user-review {
+    padding: 0px 10px;
+}
+.user-review-name {
+    font-size: 15px;
+    font-weight: 600;
+}
+.user-review-text {
+    margin: 5px 0px;
+    font-size: 14px;
+    color: #565656;
+    max-height: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
+}

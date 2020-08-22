@@ -1,0 +1,16 @@
+.rcs_sliderSet {
+    margin-top: 20px;
+}
+.rcs_buttonSet {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translate(0%, -50%);
+    top: 50% !important;
+}
+.rcs_arrowBtn {
+    background: #0047af !important;
+}
+.rcs_slideCon .itemWrapper p {
+    background: #929292
+}

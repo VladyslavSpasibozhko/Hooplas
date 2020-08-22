@@ -1,0 +1,22 @@
+.search-form {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.search-button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translate(0%, -50%);
+}
+.search-button::before {
+    content: '\f002';
+    color: #0047af;
+}
+.search-input {
+    height: 95%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    width: 98%;
+    padding-left: 5px;
+}

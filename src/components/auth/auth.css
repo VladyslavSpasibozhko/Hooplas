@@ -1,0 +1,72 @@
+.form-container {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    z-index: 2001;
+    background: rgba(37, 37, 37, 0.13);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 40px;
+    background: #ffffff;
+    min-width: 550px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0px 0px 5px 0px #252525;
+    border-radius: 5px;
+}
+.form-header h2 {
+    color: #465d7f;
+}
+.form-header h2 i {
+    color: #0047af;
+    margin-right: 5px;
+}
+.form-header .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #af0000;
+}
+.form-input-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.form-input {
+    border-radius: 5px;
+    border: 1px solid #9b9b9b;
+    padding: 8px;
+    margin: 5px 0px;
+}
+.form-button, .form-button-agree  {
+    background: #0047af;
+    padding: 10px 35px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.form-button {
+    align-self: center;
+}
+.form-button-agree {
+    align-self: flex-end;
+}
+.footer-message {
+    font-size: 13px;
+    align-self: center;
+    margin-top: 20px;
+}
+.open-other {
+    color: #0047af;
+    font-weight: 600;
+}

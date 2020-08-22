@@ -1,0 +1,24 @@
+.footer-container {
+    background: #0047af;
+}
+.links {
+    flex-direction: column;
+    padding: 20px 10px;
+}
+.links a {
+    color:#ffffff;
+    font-size: 13px;
+    padding: 3px 0px;
+}
+.icons {
+    padding: 20px 10px;
+    align-self: flex-end;
+}
+.icons a {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 0px 5px;
+}
+.icons a:hover div{
+    color: #c2c9c9;
+}

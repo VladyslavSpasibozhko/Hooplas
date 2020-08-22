@@ -1,0 +1,75 @@
+.header-container {
+    background: #0047af;
+}
+.user-info-container {
+    position: relative;
+    overflow: hidden;
+}
+.log_in, .sign_up{
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 15px;
+    margin-right: 5px;
+}
+.log_in {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+.log_out {
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+    position: absolute;
+    bottom: 3px;
+    left: 40px;
+    font-size: 13px;
+    background: #fff;
+    color: #0047af;
+    line-height: 24px;
+    border-radius: 5px;
+    z-index: -1;
+    opacity: 0;
+    min-width: 60px;
+    max-width: 110px;
+    transition: opacity 0.3s 0.2s;
+}
+.log_in:hover {
+    background: #ffffff;
+    color: #0047af;
+}
+.sign_up {
+    background: #ffffff;
+    color: #0047af;
+}
+.sign_up:hover {
+    color: #ffffff;
+    background: transparent;
+    border: 1px solid #ffffff;
+}
+.user-info-container:hover .name {
+    transform: translate(300px, 0px);
+}
+.user-info-container:hover .log_out {
+    z-index: 3;
+    opacity: 1;
+}
+.icon, .name {
+    color: #ffffff;
+    cursor: pointer;
+}
+.icon {
+    font-size: 30px;
+    font-weight: 700;
+    margin-right: 5px;
+}
+.name {
+    font-size: 13px;
+    white-space: nowrap;
+    max-width: 110px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    min-width: 70px;
+    text-align: center;
+    transition: transform 0.3s;
+}

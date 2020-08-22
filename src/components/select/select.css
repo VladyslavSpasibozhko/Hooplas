@@ -1,0 +1,98 @@
+.select-container {
+    position: relative;
+}
+.select-title {
+    background: #cfd6d6;
+    color: #252525;
+    font-size: 18px;
+    padding: 10px 35px 10px 20px;
+    position: relative;
+    font-weight: 500;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+    white-space: nowrap;
+}
+.select-sort-title {
+    font-size: 14px;
+    color: #252525;
+    padding: 10px 35px 10px 20px;
+    position: relative;
+    font-weight: 500;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    cursor: pointer;
+    min-width: 135px;
+    text-align: center;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+.select-title:hover {
+    background: #424949;
+    color: #d9d9d9;
+    cursor: pointer;
+}
+.select-title.open + .select-items-container, .select-sort-title.open + .select-items-container  {
+    max-height: 200px;
+    padding: 10px 0px;
+}
+
+.select-title::before , .select-sort-title::before{
+    content: '\f0d7';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 18px;
+    top: 53%;
+    transform: translate(0%, -50%);
+    font-weight: 900;
+    font-size: 13px;
+}
+.select-items-container {
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    z-index: 5;
+    background: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px #bebebe;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.2s ease, padding 0.2s ease;
+    margin: 0px;
+}
+.select-sort-title + .select-items-container .select-item {
+    font-size: 13px;
+    padding: 3px 30px;
+    max-width: 127px;
+}
+.select-item {
+    font-size: 15px;
+    margin-bottom: 5px;
+    padding: 3px 32px;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.select-item.active {
+    color: #0047af;
+}
+.select-item.active::before {
+    content: '';
+    position: absolute;
+    left:5px;
+    top:50%;
+    transform: translate(0%, -50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #0047af;
+}
+.select-item:last-child {
+    margin-bottom: 0px
+}
+.select-item:hover {
+    background: #d7dede;
+    cursor: pointer;
+}

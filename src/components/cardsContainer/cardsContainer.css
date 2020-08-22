@@ -1,0 +1,88 @@
+.cards-container {
+    flex-wrap: wrap;
+    padding: 15px 15px 55px 15px;
+    position: relative;
+    min-height: 300px;
+}
+.card-container {
+    padding-top: 15px;
+    width: 240px;
+    height: 380px;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    background: rgba(37, 37, 37, 0.16);
+}
+.card-container a {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.card-container:hover {
+    box-shadow: 0px 0px 5px 0px #5e5e5e;
+}
+.card-container img {
+    max-width: 205px;
+}
+.card-container p {
+    padding: 2px 5px;
+}
+.item-icon {
+    font-size: 13px;
+    color: #252525;
+    position: relative;
+}
+.item-icon::before {
+    content: '\f03d';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+}
+.title {
+    text-transform: uppercase;
+    color: #404040;
+    font-weight: 600;
+    white-space: nowrap;
+    max-width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.mark {
+    font-size: 13px;
+    color: #575757;
+}
+.button {
+    position: absolute;
+    bottom: 10px;
+    font-size: 14px;
+    color: #0047af;
+}
+.button.prev {
+    left: 5px;
+}
+.button.prev::before {
+    content: '\f104';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+}
+.button.next {
+    right: 5px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.button.next::before {
+    content: '\f105';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-left: 5px;
+}
+.items-length {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-size: 13px;
+    color: #9b9b9b;
+}
